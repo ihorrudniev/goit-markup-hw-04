@@ -151,7 +151,7 @@ img {
 }
 
 .auth-nav .link {
-  display: block;
+  display: flex;
 
   font-weight: 500;
   font-size: 14px;
@@ -160,36 +160,46 @@ img {
   color: var(--main-text-color);
 }
 
-.auth-nav .mail {
-  display: flex;
-  align-items: center;
+.mail-icon {
+  width: 16px;
+  height: 12px;
+  margin-right: 10px;
+  fill: currentColor;
 }
 
-.mail::before {
+.phone-icon {
+  width: 10px;
+  height: 16px;
+  margin-right: 10px;
+  fill: currentColor;
+}
+
+/* .mail::before {
   display: inline-flex;
   margin-right: 10px;
   content: '';
   width: 16px;
   height: 12px;
-  background-image: url(../images/image-svg/envelope.svg);
-}
+  background-image: url(../images/icon/envelope.svg);
+} */
 
-.auth-nav .phone {
+
+/* .auth-nav .phone {
   display: flex;
   align-items: center;
-}
+} */
 
-.phone::before {
+/* .phone::before {
   display: inline-flex;
   margin-right: 10px;
   content: '';
   width: 10px;
   height: 16px;
-  background-image: url(../images/image-svg/smartphone.svg);
-}
+  background-image: url(../images/icon/smartphone.svg);
+} */
 
 .auth-nav .item + .item {
-  margin-left: 50px;
+  margin-left: 30px;
 }
 
 .link.current {
@@ -344,7 +354,6 @@ img {
   margin-top: 30px;
 }
 
-
 .card-members:not(:last-child) {
   /* margin-right: 30px; */
 }
@@ -365,20 +374,6 @@ img {
   font-size: 16px;
   line-height: 1.19;
   color: var(--main-text-color);
-}
-.icon {
-  display: flex;
-  width: 206px;
-  justify-content: space-around;
-}
-.icon-socials {
-  display: inline-flex;
-  justify-content: space-between;
-  width: 44px;
-  height: 44px;
-  background-image: url(../images/hero/overlay.jpg);
-  background-repeat: no-repeat;
-  background-position: center;
 }
 
 /* ---------наши клиенты---------- */
