@@ -160,16 +160,27 @@ img {
   color: var(--main-text-color);
 }
 
-.mail-icon {
-  width: 16px;
-  height: 12px;
+.item.mail {
+  display: flex;
+  }
+.item.mail > .icon-mail {
+  display: inline-flex;
+  align-items: center;
+}
+
+.link.mail,
+.link.phone {
+  display: flex;
+  align-items: center;
+}
+
+.icon-mail {
+  display: inline-flex;
   margin-right: 10px;
   fill: currentColor;
 }
 
-.phone-icon {
-  width: 10px;
-  height: 16px;
+.icon-phone {
   margin-right: 10px;
   fill: currentColor;
 }
