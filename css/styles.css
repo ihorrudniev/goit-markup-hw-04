@@ -160,18 +160,10 @@ img {
   color: var(--main-text-color);
 }
 
-.item.mail {
-  display: flex;
-  }
-.item.mail > .icon-mail {
-  display: inline-flex;
-  align-items: center;
-}
 
 .link.mail,
 .link.phone {
-  display: flex;
-  align-items: center;
+ align-items: center;
 }
 
 .icon-mail {
