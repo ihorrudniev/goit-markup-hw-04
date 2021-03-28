@@ -10,6 +10,7 @@
   --border-bottom-header: #ececec;
   --border-item-card-set: #eeeeee;
   --hero-background-color: #c4c4c4;
+  --icon-fill-color: #afb1b8;
 }
 
 html {
@@ -63,7 +64,7 @@ img {
   display: block;
   max-width: 100%;
   height: auto;
- }
+}
 
 .list {
   margin: 0px;
@@ -160,10 +161,9 @@ img {
   color: var(--main-text-color);
 }
 
-
 .link.mail,
 .link.phone {
- align-items: center;
+  align-items: center;
 }
 
 .icon-mail {
@@ -185,7 +185,6 @@ img {
   height: 12px;
   background-image: url(../images/icon/envelope.svg);
 } */
-
 
 /* .auth-nav .phone {
   display: flex;
@@ -344,7 +343,7 @@ img {
 
   margin-left: -30px;
   margin-top: -30px;
- }
+}
 
 .card-members {
   flex-basis: calc(100% / 4 - 30px);
@@ -357,11 +356,11 @@ img {
   margin-top: 30px;
 }
 
-.card-members:not(:last-child) {
-  /* margin-right: 30px; */
-}
+/* .card-members:not(:last-child) {
+  margin-right: 30px; */
+/* } */
 .card-text {
-  padding: 30px 24px;
+  padding: 30px 32px;
   text-align: center;
 }
 .tiam {
@@ -374,9 +373,44 @@ img {
   background-color: var(--secondary-background-color);
 }
 .profession {
+  margin-bottom: 16px;
   font-size: 16px;
   line-height: 1.19;
   color: var(--main-text-color);
+}
+
+.social-icon {
+  display: inline-flex;
+}
+
+.social-icon-item + .social-icon-item {
+  margin-left: 10px;
+}
+
+.social-icon-link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  background-color: var(--main-color);
+}
+
+.icon {
+  width: 20px;
+  height: 20px;
+  fill: var(--icon-fill-color);
+}
+
+.social-icon-link:hover,
+.social-icon-link:focus {
+  background-color: var(--accent-color);
+}
+
+.social-icon-link:hover .icon,
+.social-icon-link:focus .icon {
+  fill: var(--main-color);
 }
 
 /* ---------наши клиенты---------- */
@@ -410,7 +444,7 @@ img {
 .client-6 {
   background-image: url(../images/image-svg/Client-6.svg);
 }
-}
+
 /* ---------Footer--------------*/
 .section.footer {
   padding-top: 60px;
