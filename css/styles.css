@@ -213,6 +213,7 @@ img {
 .auth-nav .link:hover,
 .auth-nav .link:focus {
   color: var(--accent-color);
+  outline: none;
 }
 
 /* ---------Баннер Герой---------- */
@@ -272,6 +273,7 @@ img {
 .button:hover,
 .bottom:focus {
   background-color: var(--button-bg-color);
+  outline: none;
 }
 
 /*---------Особенности студии--------- */
@@ -340,14 +342,12 @@ img {
 .members {
   display: flex;
   flex-wrap: wrap;
-
   margin-left: -30px;
   margin-top: -30px;
 }
 
 .card-members {
   flex-basis: calc(100% / 4 - 30px);
-  /* width: 270px; */
   background-color: var(--main-color);
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 0px 0px 4px 4px;
@@ -397,7 +397,7 @@ img {
   background-color: var(--main-color);
 }
 
-.icon {
+.social-icon .icon {
   width: 20px;
   height: 20px;
   fill: var(--icon-fill-color);
@@ -406,27 +406,73 @@ img {
 .social-icon-link:hover,
 .social-icon-link:focus {
   background-color: var(--accent-color);
+  outline: none;
 }
 
 .social-icon-link:hover .icon,
 .social-icon-link:focus .icon {
   fill: var(--main-color);
+  outline: none;
 }
 
 /* ---------наши клиенты---------- */
 .clients {
-  display: flex;
-  justify-content: space-between;
+  display: inline-flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin-left: -30px;
+  margin-top: -30px;
 }
-.clients-item:not(:last-child) {
+
+/* .clients-item {
+  flex-basis: calc(100% / 8 - 30px);
+} */
+
+/* .clients .icon {
+  width: 60px;
+  height: 32px;
+} */
+
+.clients-item-link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 170px;
+  height: 90px;
+  border: 1px solid #afb1b8;
+  border-radius: 4px;
+  fill: #afb1b8;
+  margin-left: 30px;
+  margin-top: 30px;
+}
+
+/* margin-bottom: 94px; */
+/* .clients-list {
+ display: flex;
+  justify-content: center;
+} */
+/* .clients-item:not(:last-child) {
+  margin-right: 30px;
+} */
+/* .clients-link:hover,
+.clients-link:focus {
+  border: 1px solid var(--accent-color);
+  fill: var(--accent-color);
+}
+.logo-1 {
+  width: 45px;
+  height: 50px;
+} */
+
+/* .clients-item:not(:last-child) {
   margin-right: 30px;
 }
 .clients-item .link {
   display: inline-flex;
   width: 170px;
   height: 90px;
-}
-.client-1 {
+} */
+/* .client-1 {
   background-image: url(../images/image-svg/Client-1.svg);
 }
 .client-2 {
@@ -443,7 +489,7 @@ img {
 }
 .client-6 {
   background-image: url(../images/image-svg/Client-6.svg);
-}
+} */
 
 /* ---------Footer--------------*/
 .section.footer {
@@ -508,6 +554,7 @@ img {
 .button-portfolio:focus {
   background-color: var(--accent-color);
   color: var(--main-color);
+  outline: none;
 }
 ul.card-set {
   display: flex;
