@@ -418,20 +418,11 @@ img {
 /* ---------наши клиенты---------- */
 .clients {
   display: inline-flex;
-  justify-content: center;
-  flex-wrap: wrap;
+  flex-basis: calc(100% - 30px);
+  /* flex-wrap: wrap; */
   margin-left: -30px;
   margin-top: -30px;
 }
-
-/* .clients-item {
-  flex-basis: calc(100% / 8 - 30px);
-} */
-
-/* .clients .icon {
-  width: 60px;
-  height: 32px;
-} */
 
 .clients-item-link {
   display: flex;
@@ -439,74 +430,46 @@ img {
   align-items: center;
   width: 170px;
   height: 90px;
-  border: 1px solid #afb1b8;
+  border: 1px solid var(--icon-fill-color);
   border-radius: 4px;
-  fill: #afb1b8;
+  fill: var(--icon-fill-color);
+
   margin-left: 30px;
   margin-top: 30px;
 }
 
-/* margin-bottom: 94px; */
-/* .clients-list {
- display: flex;
-  justify-content: center;
-} */
-/* .clients-item:not(:last-child) {
-  margin-right: 30px;
-} */
-/* .clients-link:hover,
-.clients-link:focus {
-  border: 1px solid var(--accent-color);
+.clients-item-link:hover,
+.clients-item-link:focus {
   fill: var(--accent-color);
+  border: 1px solid var(--accent-color);
+  outline: none;
 }
-.logo-1 {
-  width: 45px;
-  height: 50px;
-} */
-
-/* .clients-item:not(:last-child) {
-  margin-right: 30px;
-}
-.clients-item .link {
-  display: inline-flex;
-  width: 170px;
-  height: 90px;
-} */
-/* .client-1 {
-  background-image: url(../images/image-svg/Client-1.svg);
-}
-.client-2 {
-  background-image: url(../images/image-svg/Client-2.svg);
-}
-.client-3 {
-  background-image: url(../images/image-svg/Client-3.svg);
-}
-.client-4 {
-  background-image: url(../images/image-svg/Client-4.svg);
-}
-.client-5 {
-  background-image: url(../images/image-svg/Client-5.svg);
-}
-.client-6 {
-  background-image: url(../images/image-svg/Client-6.svg);
-} */
 
 /* ---------Footer--------------*/
+
+.our-contacts {
+  display: flex;
+}
+
 .section.footer {
   padding-top: 60px;
   padding-bottom: 60px;
 }
+
 .footer .logo {
   margin-bottom: 20px;
 }
+
 .logo-footer {
   color: var(--main-color);
 }
-.contacts {
+
+.geoposition {
   font-style: normal;
   color: var(--main-color);
 }
-.contacts .link {
+
+.geoposition .link {
   font-family: Roboto;
   font-style: normal;
   font-weight: 400;
@@ -515,12 +478,37 @@ img {
   letter-spacing: 0.03em;
   color: rgba(255, 255, 255, 0.6);
 }
+
 .auth-nav-item:not(:first-child) {
   margin-top: 9px;
 }
+
 .footer .auth-nav {
   flex-direction: column;
   margin-top: 9px;
+}
+
+.join {
+  margin-bottom: 20px;
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.14;
+  text-transform: uppercase;
+  color: var(--main-color);
+}
+
+.card-footer {
+  flex-basis: calc(100% / 4 - 70px);
+}
+.social-networks {
+  margin-left: 70px;
+  padding-top: 15px;
+}
+
+.card-footer .social-icon-link {
+  background-color: rgba(255, 255, 255, 0.1);
 }
 
 /*------------ страница портфолио------------- */
@@ -567,6 +555,12 @@ ul.card-set {
   margin-top: 30px;
   flex-basis: calc((100% - 90px) / 3);
 }
+
+.item-card-set:hover,
+.item-card-set:focus {
+  box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
+}
+
 .link-content {
   padding: 20px 24px;
   background: var(--main-color);
