@@ -11,6 +11,7 @@
   --border-item-card-set: #eeeeee;
   --hero-background-color: #c4c4c4;
   --icon-fill-color: #afb1b8;
+  --card-set-gap: 30px;
 }
 
 html {
@@ -244,7 +245,8 @@ img {
   padding-bottom: 200px;
 }
 .section.hero {
-  min-width: 1600px;
+  max-width: 1600px;
+  margin: 0 auto;
   background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/hero/overlay.jpg);
   background-color: var(--hero-background-color);
   background-repeat: no-repeat;
@@ -340,18 +342,18 @@ img {
 .members {
   display: flex;
   flex-wrap: wrap;
-  margin-left: -30px;
-  margin-top: -30px;
+  margin-left: calc(-1 * var(--card-set-gap));
+  margin-top: calc(-1 * var(--card-set-gap));
 }
 
 .card-members {
-  flex-basis: calc(100% / 4 - 30px);
+  flex-basis: calc(100% / 4 - var(--card-set-gap));
   background-color: var(--main-color);
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 0px 0px 4px 4px;
 
-  margin-left: 30px;
-  margin-top: 30px;
+  margin-left: var(--card-set-gap);
+  margin-top: var(--card-set-gap);
 }
 
 /* .card-members:not(:last-child) {
@@ -415,9 +417,9 @@ img {
 
 /* ---------наши клиенты---------- */
 .clients {
-  display: inline-flex;
-  flex-basis: calc(100% - 30px);
-  flex-wrap: wrap;
+  display: flex;
+  /* flex-basis: calc(100% - 30px);
+  flex-wrap: wrap; */
   margin-left: -30px;
   margin-top: -30px;
 }
@@ -553,16 +555,16 @@ img {
   box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
   outline: none;
 }
-ul.card-set {
+.list.card-set {
   display: flex;
   flex-wrap: wrap;
-  margin-left: -30px;
-  margin-top: -30px;
+  margin-left: calc(-1 * var(--card-set-gap));
+  margin-top: calc(-1 * var(--card-set-gap));
 }
 .item-card-set {
-  margin-left: 30px;
-  margin-top: 30px;
-  flex-basis: calc((100% - 90px) / 3);
+  flex-basis: calc(100% / 3 - var(--card-set-gap));
+  margin-left: var(--card-set-gap);
+  margin-top: var(--card-set-gap);
 }
 
 .item-card-set:hover,
