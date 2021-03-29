@@ -417,7 +417,7 @@ img {
 .clients {
   display: inline-flex;
   flex-basis: calc(100% - 30px);
-  /* flex-wrap: wrap; */
+  flex-wrap: wrap;
   margin-left: -30px;
   margin-top: -30px;
 }
@@ -498,7 +498,7 @@ img {
 }
 
 .card-footer {
-  flex-basis: calc(100% / 4 - 70px);
+  flex-basis: calc((50% - 45px) / 2);
 }
 .social-networks {
   margin-left: 70px;
