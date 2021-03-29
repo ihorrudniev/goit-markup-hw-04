@@ -511,6 +511,16 @@ img {
   background-color: rgba(255, 255, 255, 0.1);
 }
 
+.card-footer .icon {
+  fill: var(--main-color);
+}
+
+.social-icon-link:hover,
+.social-icon-link:focus {
+  background-color: var(--accent-color);
+  outline: none;
+}
+
 /*------------ страница портфолио------------- */
 .btn .list {
   display: flex;
